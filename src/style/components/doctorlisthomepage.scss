@@ -1,0 +1,14 @@
+.homepage_doctorList{
+    & ul{
+        list-style: none;
+    }
+
+    & span{
+        font-weight: bold;
+    }
+
+    & h2{
+        text-align: center;
+        text-transform: capitalize;
+    }
+}

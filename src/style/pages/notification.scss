@@ -1,0 +1,20 @@
+.notification{
+
+    &_title{
+        text-align: center;
+        color: $greencolor;
+        margin-bottom: 20px;
+    }
+
+    &_unseen{
+        border: $bluecolor solid 2px;
+        border-radius: 10px;
+        padding: 10px;
+        cursor: pointer;
+        width: 14rem;
+        float: right;
+        &:hover{
+            background-color: $greencolor;
+        }
+    }
+}

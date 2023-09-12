@@ -1,0 +1,45 @@
+.applyDoctor{
+
+    margin-left: 2rem;
+
+    &_title{
+        text-align: center;
+        color: $greencolor;
+        margin-bottom: 20px;
+    }
+    & input{
+        width: 24rem;
+        border-radius: 10px;
+        border: none;
+        height: 2rem;
+        padding: 5px;
+        outline: $bluecolor solid 1px;
+    }
+
+    & input[type="text"]{
+        padding-left: 20px;
+    }
+    & input[type="number"]{
+        padding-left: 20px;
+    }
+    & input[type="time"]{
+        padding-left: 9rem;
+    }
+
+    &_btn{
+        padding: 10px;
+        width: 10rem;
+        margin-top: 20px;
+        border-radius: 20px;
+        text-transform: uppercase;
+        font-weight: bold;
+        cursor: pointer;
+        border: $bluecolor solid 2px;
+        color: $greencolor;
+        margin-left: 25rem;
+        &:hover{
+          background-color: $greencolor; 
+          color: $bluecolor; 
+        }
+    }
+}

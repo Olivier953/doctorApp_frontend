@@ -1,0 +1,16 @@
+.usersList{
+    margin-bottom: 20px;
+    text-align: center;
+    color: $greencolor;
+
+    &_sheet{
+        & h3{
+            font-size: 20px;
+    }
+}
+}
+
+.name{
+    text-transform: capitalize;
+    font-size: 20px;
+}

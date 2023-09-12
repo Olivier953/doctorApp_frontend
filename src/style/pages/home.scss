@@ -1,0 +1,27 @@
+.home{
+    &_title{
+        text-align: center;
+        color: $greencolor;
+    }
+
+    &_subtitle{
+        margin-left: 2rem;
+        margin-top: 1rem;
+        text-decoration: underline;
+    }
+
+    &_doctorsList{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 3rem;
+        margin-left: 2rem;
+
+        &_eachDoctor{
+            border: $bluecolor solid 2px;
+            border-radius: 10px;
+            margin-right: 2rem;
+            cursor: pointer;
+            width: 17rem;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+///////////////////////////////////BASE///////////////////////////////////
+
+@import "./style/base/colors.scss";
+@import "./style/base/mixins.scss";
+@import "./style/base/spinner.scss";
+
+///////////////////////////////////COMPONENT///////////////////////////////////
+
+@import "./style/components/doctorlisthomepage.scss";
+@import "./style/components/appointmentsHomepage.scss";
+@import "./style/components/userProfile.scss";
+@import "./style/components/usersListAdmin.scss";
+@import "./style/components/doctorList.scss";
+@import "./style/components/appointmentDoctor.scss";
+@import "./style/components/update.scss";
+
+///////////////////////////////////LAYOUT///////////////////////////////////
+@import "./style/layout/layout.scss";
+
+///////////////////////////////////PAGES///////////////////////////////////
+
+@import "./style/pages/register.scss";
+@import "./style/pages/login.scss";
+@import "./style/pages/home.scss";
+@import "./style/pages/applyDoctor.scss";
+@import "./style/pages/bookAppointments.scss";
+@import "./style/pages/notification.scss";
+
+

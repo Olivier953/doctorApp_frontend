@@ -1,0 +1,26 @@
+.book{
+    margin-left: 3rem;
+    margin-top: 20px;
+
+    &_title{
+        text-transform: capitalize;
+    }
+
+    & p{
+        font-weight: bold;
+    }
+
+    &_btn{
+        margin-left: 20px;
+        border-radius: 15px;
+        padding: 10px;
+        cursor: pointer;
+        border: $bluecolor solid 2px;
+        color: $greencolor;
+
+        &:hover{
+            background-color: $greencolor;
+            color: $bluecolor;
+        }
+    }
+}

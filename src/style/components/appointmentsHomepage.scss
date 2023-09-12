@@ -1,0 +1,15 @@
+.appointments{
+
+    &_doctorName{
+    text-transform: capitalize;
+}
+
+&_title{
+    text-align: center;
+    color: $greencolor;
+    margin-bottom: 20px;
+}
+}
+
+
+
