@@ -14,7 +14,7 @@ export const Home = () => {
       try {
         dispatch(showLoading());
         const response = await axios.get(
-          "http://localhost:5000/user/get-all-approved-doctors",
+          "https://doctor-app-backend-puce.vercel.app/user/get-all-approved-doctors",
           {
             headers: {
               Authorization: "Bearer " + localStorage.getItem("token"),

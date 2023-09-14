@@ -16,7 +16,7 @@ function ApplyDoctor() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:5000/user/apply-doctor-account",
+        "https://doctor-app-backend-puce.vercel.app/user/apply-doctor-account",
         { ...value, userId: user._id },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

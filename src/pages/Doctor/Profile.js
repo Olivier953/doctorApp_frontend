@@ -18,7 +18,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:5000/doctor/update-doctor-profile",
+        "https://doctor-app-backend-puce.vercel.app/doctor/update-doctor-profile",
         { ...values, userId: user._id },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -40,7 +40,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "http://localhost:5000/doctor/get-doctor-info-by-user-id",
+        "https://doctor-app-backend-puce.vercel.app/doctor/get-doctor-info-by-user-id",
         {
           userId: params.userId,
         },
@@ -67,7 +67,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.get(
-        "http://localhost:5000/admin/get-all-doctors",
+        "https://doctor-app-backend-puce.vercel.app/admin/get-all-doctors",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

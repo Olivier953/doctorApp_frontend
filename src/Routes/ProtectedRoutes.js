@@ -16,7 +16,7 @@ function ProtectedRoute(props) {
         try {
           dispatch(showLoading());
           const response = await axios.post(
-            "http://localhost:5000/user/userInfo",
+            "https://doctor-app-backend-puce.vercel.app/user/userInfo",
             { token: localStorage.getItem("token") },
             {
               headers: {

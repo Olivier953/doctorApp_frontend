@@ -13,7 +13,7 @@ const UsersList = () => {
     try {
       dispatch(showLoading());
       const response = await axios.get(
-        "http://localhost:5000/admin/get-all-users",
+        "https://doctor-app-backend-puce.vercel.app/admin/get-all-users",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

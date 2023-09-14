@@ -14,7 +14,7 @@ function Appointments() {
     try {
       dispatch(showLoading());
       const response = await axios.get(
-        "http://localhost:5000/user/get-appointment-by-user-id",
+        "https://doctor-app-backend-puce.vercel.app/user/get-appointment-by-user-id",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
