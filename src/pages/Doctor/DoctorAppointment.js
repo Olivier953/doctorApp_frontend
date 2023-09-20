@@ -14,7 +14,7 @@ const DoctorAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.get(
-        "https://doctor-app-backend-puce.vercel.app/doctor/get-appointment-by-doctor-id",
+        "https://doctorapp.onrender.com/doctor/get-appointment-by-doctor-id",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
@@ -34,7 +34,7 @@ const DoctorAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctor-app-backend-puce.vercel.app/doctor/change-appointment-doctor-status",
+        "https://doctorapp.onrender.com/doctor/change-appointment-doctor-status",
         { appointmentId: record._id, status: status },
         {
           headers: {

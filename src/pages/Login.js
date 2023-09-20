@@ -27,7 +27,7 @@ export const Login = () => {
     e.preventDefault();
     try {
       dispatch(showLoading());
-      const response = await axios.post("https://doctor-app-backend-puce.vercel.app/user/login", {
+      const response = await axios.post("https://doctorapp.onrender.com/user/login", {
         ...data,
       });
       dispatch(hideLoading());

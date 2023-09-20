@@ -15,7 +15,7 @@ const Register = () => {
     try {
       dispatch(showLoading());
 
-      const response = await axios.post("https://doctor-app-backend-puce.vercel.app/user/register", {
+      const response = await axios.post("https://doctorapp.onrender.com/user/register", {
         ...data,
       });
       dispatch(hideLoading());

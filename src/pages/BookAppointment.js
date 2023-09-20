@@ -22,7 +22,7 @@ const BookAppointment = () => {
       try {
         dispatch(showLoading());
         const response = await axios.post(
-          "https://doctor-app-backend-puce.vercel.app/doctor/get-doctor-info-by-id",
+          "https://doctorapp.onrender.com/doctor/get-doctor-info-by-id",
           {
             doctorId: params.doctorId,
           },
@@ -46,7 +46,7 @@ const BookAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctor-app-backend-puce.vercel.app/user/book-appointment",
+        "https://doctorapp.onrender.com/user/book-appointment",
         {
           doctorId: params.doctorId,
           userId: user._id,
@@ -76,7 +76,7 @@ const BookAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctor-app-backend-puce.vercel.app/user/check-booking-availability",
+        "https://doctorapp.onrender.com/user/check-booking-availability",
         {
           doctorId: params.doctorId,
           date: date,
