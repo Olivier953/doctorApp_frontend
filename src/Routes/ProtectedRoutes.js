@@ -16,7 +16,7 @@ function ProtectedRoute(props) {
         try {
           dispatch(showLoading());
           const response = await axios.post(
-            "https://doctorapp.onrender.com/user/userInfo",
+            "https://doctorapp-y8n7.onrender.com/user/userInfo",
             { token: localStorage.getItem("token") },
             {
               headers: {

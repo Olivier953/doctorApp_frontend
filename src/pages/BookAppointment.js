@@ -22,7 +22,7 @@ const BookAppointment = () => {
       try {
         dispatch(showLoading());
         const response = await axios.post(
-          "https://doctorapp.onrender.com/doctor/get-doctor-info-by-id",
+          "https://doctorapp-y8n7.onrender.com/doctor/get-doctor-info-by-id",
           {
             doctorId: params.doctorId,
           },
@@ -46,7 +46,7 @@ const BookAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctorapp.onrender.com/user/book-appointment",
+        "https://doctorapp-y8n7.onrender.com/user/book-appointment",
         {
           doctorId: params.doctorId,
           userId: user._id,
@@ -76,7 +76,7 @@ const BookAppointment = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctorapp.onrender.com/user/check-booking-availability",
+        "https://doctorapp-y8n7.onrender.com/user/check-booking-availability",
         {
           doctorId: params.doctorId,
           date: date,

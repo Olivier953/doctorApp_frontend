@@ -18,7 +18,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctorapp.onrender.com/doctor/update-doctor-profile",
+        "https://doctorapp-y8n7.onrender.com/doctor/update-doctor-profile",
         { ...values, userId: user._id },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },
@@ -40,7 +40,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctorapp.onrender.com/doctor/get-doctor-info-by-user-id",
+        "https://doctorapp-y8n7.onrender.com/doctor/get-doctor-info-by-user-id",
         {
           userId: params.userId,
         },
@@ -67,7 +67,7 @@ function Profile() {
     try {
       dispatch(showLoading());
       const response = await axios.get(
-        "https://doctorapp.onrender.com/admin/get-all-doctors",
+        "https://doctorapp-y8n7.onrender.com/admin/get-all-doctors",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,
