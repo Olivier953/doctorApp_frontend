@@ -13,7 +13,7 @@ const UsersList = () => {
     try {
       dispatch(showLoading());
       const response = await axios.get(
-        "https://doctorapp.onrender.com/admin/get-all-users",
+        "https://doctorapp-y8n7.onrender.com/admin/get-all-users",
         {
           headers: {
             Authorization: `Bearer ${localStorage.getItem("token")}`,

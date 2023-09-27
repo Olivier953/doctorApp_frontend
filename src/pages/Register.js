@@ -15,7 +15,7 @@ const Register = () => {
     try {
       dispatch(showLoading());
 
-      const response = await axios.post("https://doctorapp.onrender.com/user/register", {
+      const response = await axios.post("https://doctorapp-y8n7.onrender.com/user/register", {
         ...data,
       });
       dispatch(hideLoading());

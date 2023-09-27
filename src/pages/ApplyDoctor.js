@@ -16,7 +16,7 @@ function ApplyDoctor() {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctorapp.onrender.com/user/apply-doctor-account",
+        "https://doctorapp-y8n7.onrender.com/user/apply-doctor-account",
         { ...value, userId: user._id },
         {
           headers: { Authorization: `Bearer ${localStorage.getItem("token")}` },

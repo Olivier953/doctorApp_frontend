@@ -17,7 +17,7 @@ const Notifications = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctorapp.onrender.com/user/mark-all-notifications-as-seen",
+        "https://doctorapp-y8n7.onrender.com/user/mark-all-notifications-as-seen",
         { userId: user._id },
         {
           headers: {
@@ -42,7 +42,7 @@ const Notifications = () => {
     try {
       dispatch(showLoading());
       const response = await axios.post(
-        "https://doctorapp.onrender.com/user/delete-all-notifications",
+        "https://doctorapp-y8n7.onrender.com/user/delete-all-notifications",
         { userId: user._id },
         {
           headers: {
