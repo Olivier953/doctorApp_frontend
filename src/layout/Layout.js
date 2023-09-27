@@ -64,7 +64,7 @@ const Layout = ({children}) => {
   const role = user?.isAdmin ? "Admin" : user?.isDoctor ? "doctor" : "user"
 
   const Logout = () => {
-    sessionStorage.clear();
+    localStorage.clear();
     navigate("/login")
   }
 

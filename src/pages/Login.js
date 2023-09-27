@@ -34,7 +34,7 @@ export const Login = () => {
       dispatch(hideLoading());
       if (response.data.success) {
         toast.success(response.data.message);
-        sessionStorage.setItem("token", response.data.data);
+        localStorage.setItem("token", response.data.data);
         //setTimeout(() => {
         navigate("/");
         //}, 1000);
