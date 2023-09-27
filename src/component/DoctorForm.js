@@ -112,7 +112,7 @@ export const DoctorForm = ({ onFinish, initialValues }) => {
 
 /*
 try{
-      const response = await axios.post("https://doctorapp-y8n7.onrender.com/user/apply-doctor-account",
+      const response = await axios.post("https://doctorapp.onrender.com/user/apply-doctor-account",
       {...value},
       {
           headers: {Authorization : `Bearer ${localStorage.getItem("token")}`}
